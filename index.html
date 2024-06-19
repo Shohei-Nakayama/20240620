@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.11/dist/vue.js"></script>
+    <title>20230620</title>
+</head>
+<body>
+    <div id="app">
+        <label><input type="radio" value="IMG_0072.JPG" v-model="fileName"
+        </label>
+        <br>
+        <label><input type="radio" value="IMG_0083.jpg" v-model="fileName"
+        </label>
+        <br>
+        <p>{{fileName}}を選択</p>
+        <img v-bind:src="fileName"></img>
+    </div>
+
+</body>
+</html>
